@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Facebook">
+	<listeners>
+		<listener class-name="commons.MethodListener"></listener>
+	</listeners>
+	<test name="Run on Firefox">
+		<parameter name="browserName" value="firefox" />
+		<classes>
+			<class name="com.facebook.user.Element_Undisplayed" />
+		</classes>
+	</test>
+
+
+</suite>
+

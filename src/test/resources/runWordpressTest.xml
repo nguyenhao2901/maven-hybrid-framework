@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Wordpress - Admin">
+	<listeners>
+		<listener class-name="commons.MethodListener"></listener>
+		<listener class-name="reportConfig.ReportNGListener" />
+
+	</listeners>
+	<test name="Run on Firefox">
+		<parameter name="browserName" value="firefox" />
+		<parameter name="AdminUrl" value="http://abubu.net/wp-admin/" />
+		<parameter name="EndUserUrl" value="http://abubu.net" />
+		<classes>
+			<class name="com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search" />
+		</classes> 
+	</test>
+
+
+</suite>
